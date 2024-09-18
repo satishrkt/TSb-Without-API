@@ -1,14 +1,16 @@
 import { AfterViewInit, Component, ElementRef, HostListener, Renderer2 } from '@angular/core';
+import { MatIconModule } from '@angular/material/icon';
 import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, MatIconModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
 export class HeaderComponent implements AfterViewInit {
+icons: any;
 
   constructor(private render: Renderer2, private element: ElementRef) {}
 

@@ -1,0 +1,113 @@
+.private-session {
+    font-family: 'Butler';
+    background-image: url('/assets/images/sheetal-bg.jpg');
+    padding: 120px 100px;
+}
+
+.private{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-first {
+    border: 1px solid #C07F7C;
+    
+    height: 600px;
+    width: 500px;
+    z-index: 0;
+    position: relative;
+}
+
+.div-first .session-inner {
+    position: relative;
+    height: 500px;
+    width: 400px;
+    background-color: #C07F7C;
+    z-index: 1;
+    overflow: overlay;
+    top: 50px;
+    left: 50px;
+    padding: 50px;
+    color: #fff;
+}
+.div-second {
+    background-color: #fff;
+    /* height: 600px; */
+    width: 700px;
+    position: relative;
+    z-index: 10;
+    padding: 50px
+}
+.div-second .para1 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.div-second .para2 {
+    font: 400 16px / 1.4 Campton;
+}
+
+.session-inner h1{
+    font-size: 25px;
+    font-family: 'Butler';
+}
+.session-inner p{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.div-second p span{
+    font: 400 16px / 1.4 Campton;
+}
+
+.session-inner button{
+    margin-top: 50px;
+    height: 60px;
+    width: 335px;
+    background-color: #fff;
+    padding: 10px 10px;
+    color: #a88335;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: relative;
+    left: -50px;
+    text-align: left;
+    font: bold 16px / 1.4 Campton;
+
+
+}
+
+.session-inner button img {
+    position: relative;
+    left: 165px;
+}
+
+mat-form-field {
+    width: 100%;
+}
+
+.div-total {
+    border: 1px solid black;
+    padding: 20px 0;
+}
+
+.div-total .item{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.btns {
+    padding-top: 20px;
+}
+.btns button{
+    background-color: #C07F7C;
+    color: #fff;
+}
+.item div {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Champton";
+    padding: 5px 0;
+}

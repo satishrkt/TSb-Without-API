@@ -10,12 +10,16 @@ import { CorporateComponent } from './main-component/corporate/corporate.compone
 import { PortfolioComponent } from './main-component/portfolio/portfolio.component';
 import { CartComponent } from './main-component/cart/cart.component';
 import { CheckoutComponent } from './main-component/checkout/checkout.component';
+import { SingleEventComponent } from './main-component/single-event/single-event.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: '', redirectTo: '', pathMatch: 'full' },
     { path: 'about', component: AboutComponent },
     { path: 'event', component: EventComponent },
+    { path: 'event', children: [{
+        path: 'single-event', component: SingleEventComponent 
+    }]},
     { path: 'resourecs', component: ResourcesComponent },
     { path: 'contact', component: ContactComponent },
     { path: 'private', component: PrivateComponent },
