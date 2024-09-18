@@ -1,0 +1,204 @@
+.section-about {
+    position: relative;
+    height: 450px;
+    width: 100%;
+    overflow: hidden; /* Ensure no content overflows the section */
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire banner area */
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.4; /* Corrected opacity syntax */
+}
+
+.heading {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Butler';
+    font-size: 80px;
+    color: #333; /* Add color to make text visible */
+    text-transform: uppercase;
+    mix-blend-mode: color-burn; /* This effect might be better with some backgrounds */
+    opacity: 1;
+    z-index: 999;
+}
+
+
+.section-first{
+    background-image: url('/assets/images/cutout-spalsh.png');
+    background-color:aliceblue;
+    min-height: 450px;
+    background-size: cover;
+}
+
+.res-heading{
+    text-align: center;
+    max-width: 950px;
+    margin: auto;
+    padding: 100px 0px;
+}
+.res-text {
+    font-family: 'Butler';
+    font-size: 34px;
+    line-height: 60px;
+    font-family: Butler;
+    font-weight: 300;
+    margin-bottom: 3rem;
+}
+
+.section-blog {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url('/assets/images/sheetal-bg.jpg');
+    background-size: contain;
+}
+
+.blogs {
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    padding: 30px; /* Adds padding inside the column */
+    border-radius: 8px; /* Optional: Adds rounded corners to the column */
+    overflow: hidden; /* Ensures content doesn't overflow */
+}
+
+.blogs img {
+    width: 100%; /* Image width adjusts to the column width */
+    height: 350px; /* Keeps image aspect ratio */
+    display: block; /* Removes the bottom gap below images */
+} 
+
+.blogs .content {
+    padding: 15px; /* Adds padding around content */
+    text-align: left; /* Centers text within the content area */
+    background-color: #f8f8f8;
+    opacity: .95;
+}
+
+.content h2 {
+    color: #123132;
+    font-family: 'Butler';
+    font-size: 35px; /* Adjusts the size of the headings */
+    margin-bottom: 20px; /* Adds spacing below the heading */
+}
+
+.content p {
+    font-family: 'Butler';
+    margin-bottom: 10px; /* Adds spacing between paragraphs */
+    color: #123132;
+    
+}
+
+.content a {
+    color: #123132;
+    margin-top: 10px; /* Adds spacing above the button */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    margin-bottom: 20px;
+    text-underline-offset: 10px;
+}
+
+.date {
+    margin-top: 20px;
+}
+
+.content a:hover {
+    color: #a88335;
+} 
+
+.session{
+    min-height: 850px;
+    background: url('/assets/images/book-bg-500kv.png');
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.session-head{
+    background-color: #aea2a1;
+    height: 750px;
+    width: 500px;
+    position: relative;
+    top: 50px;
+    right: -80px;
+    opacity: 0.50;
+}
+.session-head .title{
+    position: static;
+    padding: 70px 70px 0px 40px;
+    /* color: white; */
+    font-family: 'Butler';
+    font-weight: bold;
+    font-size: 30px;
+}
+.session-head .content{
+    padding: 10px 40px 0px 40px;
+    font-size: 15px;
+    color: white;
+    line-height: 25px;
+}
+
+
+.sheetal-intro{
+    background: url('/assets/images/vector-seep.png');
+    background-attachment: scroll;
+    height: 400px;
+    width: 400px;
+    background-size: cover;
+}
+.session-body{
+    position: relative;
+    right: 480px;
+    top: 30px;
+}
+.session-body li{
+    background-color: white;
+    margin: 30px -20px;
+    display: flex;
+    top: 20px;
+    border-radius: 50px;
+    justify-content: space-between;
+    padding: 10px;
+    width: 350px;
+}
+
+.session-body ul {
+    position: relative;
+    top: 70px;
+    right: -48px;
+}
+
+.brdr-ltlb-0{
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+.session-body li a{
+    text-decoration: none;
+    color: #123132;
+    padding: 10px 25px;
+    font-weight:600;
+    font-size: 17px; 
+}
+
+.session-body img{
+    transition: transform .7s ease-in-out;
+}
+
+.session-body img:hover{
+    transform: rotate(360deg);
+}
+.session-body li a:hover{
+    color: #c07f7c;
+    font-weight: 600;
+}

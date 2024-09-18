@@ -1,0 +1,96 @@
+.cart-page {
+    background-image: url("/assets/images/sheetal-bg.jpg");
+    background-size: cover;
+    padding: 150px 0px;
+}
+.cart-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart-container h2{
+    padding: 20px;
+  }
+  .cart-table {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .quantity {
+    width: 50px;
+    height: 30px;
+    border-radius: 5px;
+  }
+  dl span{
+    font-family: "Butler";
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .cart-table th {
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .coupon-section {
+    padding: 20px;
+  }
+  
+  .coupon-section form {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .coupon-section input {
+    padding: 8px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .coupon-section .btn {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .coupon-section .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .discount-message {
+    color: #008000;
+    margin-top: 10px;
+  }
+  
+  .total-section {
+    padding: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .total-section p {
+    font-size: 18px;
+  }
+  
+  .checkout-btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .checkout-btn:hover {
+    background-color: #218838;
+  }
+  

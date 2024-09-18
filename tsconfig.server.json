@@ -1,0 +1,18 @@
+{
+    "extends": "./tsconfig.app.json",
+    "compilerOptions": {
+      "outDir": "./out-tsc/app-server",
+      "baseUrl": "./",
+      "module": "esnext", // Ensure this is set to esnext or another supported module
+      "target": "es2020", // Ensure this is set to es2020 or later
+      "types": []
+    },
+    "files": [
+      "src/main.server.ts",
+      "server.ts"
+    ],
+    "angularCompilerOptions": {
+      "entryModule": "src/app/app.server.module#AppServerModule"
+    }
+  }
+  

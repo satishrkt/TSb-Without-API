@@ -1,0 +1,62 @@
+<div class="cart-page">
+  <div class="container">
+    <div class="cart-container">
+      <h2>Your Cart</h2>
+      <table mat-table [dataSource]="data" class="mat-elevation-z8 cart-table">
+    
+        <!-- Item column with 6-column span -->
+        <ng-container matColumnDef="item">
+          <th mat-header-cell *matHeaderCellDef colspan="6">Item</th>
+          <td mat-cell *matCellDef="let element" colspan="6">
+            <dl> Event Info: <br>
+              <span>Event: </span><dd>{{element.eventName}}</dd>
+              <dd><span>Local Time: </span><br>{{element.localTime}}</dd>
+              <dd><span>Client Time: </span><br>{{element.clientTime}}</dd>
+            </dl>
+          </td>
+        </ng-container>
+    
+        <!-- Price column with 2-column span -->
+        <ng-container matColumnDef="price">
+          <th mat-header-cell *matHeaderCellDef colspan="2">Price</th>
+          <td mat-cell *matCellDef="let element" colspan="2">USD {{element.price}}</td>
+        </ng-container>
+    
+        <!-- Quantity column with 2-column span -->
+        <ng-container matColumnDef="quantity">
+          <th mat-header-cell *matHeaderCellDef colspan="2">Quantity</th>
+          <td mat-cell *matCellDef="let element" colspan="2">
+            <input class="quantity" type="number" value="1" min="1">
+          </td>
+        </ng-container>
+    
+        <!-- Subtotal column with 2-column span -->
+        <ng-container matColumnDef="subtotal">
+          <th mat-header-cell *matHeaderCellDef colspan="2">Subtotal</th>
+          <td mat-cell *matCellDef="let element" colspan="2">USD {{element.price * element.TotalNumberOfPerson}}</td>
+        </ng-container>
+    
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+      <div class="coupon-section">
+        <h3>Apply Coupon</h3>
+        <form (ngSubmit)="applyCoupon()">
+          <input type="text"  name="couponCode" placeholder="Enter coupon code" required>
+          <button type="submit" class="btn" disabled>Apply</button>
+        </form>
+        @if(discountMessage) {
+          <p class="discount-message">{{ discountMessage }}</p>
+        }
+      </div>
+      <div class="total-section">
+        <p>Subtotal: USD {{ calculateSubtotal() }}</p>
+        <p>Discount: USD {{ discountAmount }}</p>
+        <p><strong>Total: USD {{ calculateTotal() }}</strong></p>
+      </div>
+    
+      <a class="btn checkout-btn" routerLink="/checkout">Proceed to Checkout</a>
+    </div>
+    
+  </div>
+</div>

@@ -1,0 +1,61 @@
+.section-footer{
+    height: 300px;
+    width: 100%;
+    background-color: #123132;
+    /* position: fixed; */
+    position: relative;
+    overflow: hidden;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+img{
+    height: 80px;
+    width: 80px;
+    background-color: whitesmoke;
+
+}
+
+li{
+    list-style: none;
+    line-height: 35px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.para{
+    color: white;
+    line-height: 25px;
+    font-size: 17px;
+}
+.input1{
+    border: none;
+    border-radius: 50px;
+    height: 50px;
+    padding: 26px;
+    width: 100%;
+}
+.input2{
+    border: none;
+    border-radius: 50px;
+    height: 52px;
+    width: 40%;
+    color: white;
+    position: relative;
+    right: 45px;
+    background-color: #a88335;
+}
+
+.inner-form{
+    display: inline-flex;
+}
+
+.social-icon .fa-brands{
+    margin: 15px 20px;
+    padding: 15px 15px;
+    border-radius: 50px;
+    border: 2px solid white;    
+}

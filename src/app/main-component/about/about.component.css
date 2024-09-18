@@ -1,0 +1,262 @@
+.banner img{
+    height: 450px;
+    width: 100%;    
+    transition: all 5s ease-in-out;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .40;
+    /* background-position: 50%; */
+    /* position: relative; */
+}
+
+.banner img:hover{
+    transform: scale(2);
+}
+
+.heading{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: overlay;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    position: relative;
+    font-size: 100px;    
+    text-align: center;
+    /* color: transparent; */
+    overflow: visible;
+    mix-blend-mode: color-burn;
+    opacity: .75;
+    top: -160px;
+}
+.section-first{
+    height: 100%;
+    width: 100%;
+    background-image: url('/assets/images/sheetal-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-first .container{
+    padding: 150px 100px;
+}
+
+.outer-div{
+    position: relative;
+    padding: 0 60px;
+}
+.inner-div1 {
+    padding-right: 25px;
+    text-align: end;
+}
+.inner-div1 img{
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.inner-div2{
+    padding-right: 35px;
+}
+
+.inner-div2 h1{
+    font-family: 'Butler';
+    font-size: 2.5rem;
+    color: #a88335;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.inner-div2 p{
+    padding-right: 30px;
+    position: relative;
+    text-align: left;
+    font-family: 'Butler';
+    line-height: 30px;
+    font-size: 23px;
+    opacity: .65;
+}
+
+.section-second{
+    padding: 15rem 0 -1rem; 
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100%;
+    position: relative;
+    background-image: url('/assets/images/sheetal-large-bg.png');
+}
+.section-second .container {
+    padding: 70px 125px;
+}
+.inner-div3 {
+    padding: 150px 100px;
+}
+
+.inner-div3 p{
+    text-align: left;
+    font-family: 'campton';
+    font-size: 17px;
+    opacity: .65;
+}
+
+.section-methodology{
+    /* position: relative; */
+    position: relative;
+    background-image: url('/assets/images/cutout-spalsh.png');
+    /* background-position: 100%; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-img{
+    text-align: center;
+}
+/* .bg-img span{
+    background-image: url('/assets/images/Methology-pattern.png');
+    display: block;
+    background-size: contain;
+    position: absolute;
+    left: 6%;
+    top: -10%;
+    width: 100%;
+    height: 100%;
+} */
+
+.bg-img img{
+    text-align: center;
+    padding: 15px 0;
+    height: 450px;
+    width: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.outer-div2 {
+    padding: 20px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 2px solid black; */
+}
+.inner-div5 {
+    margin: 150px 0;
+    border: 1px solid #a88335;
+    padding: 0px 70px;
+}
+
+.inner-div5 .title-head {
+    position: relative;
+    top: -35px;
+    background-color: #a88335;
+    padding: 10px 15px;
+    margin: 0 70px;
+    text-align: center;
+}
+.title-head h2{
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Butler';
+    margin: 8px !important;
+}
+
+.inner-div5 p {
+    text-align: center;
+    font-family: 'crampton';
+    font-size: 18px;
+    line-height: 25px;
+    opacity: .65;
+}
+
+.session{
+    min-height: 850px;
+    background: url('/assets/images/book-bg-500kv.png');
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.session-head{
+    background-color: #aea2a1;
+    height: 750px;
+    width: 500px;
+    position: relative;
+    top: 50px;
+    right: -80px;
+    opacity: 0.50;
+}
+.session-head .title{
+    position: static;
+    padding: 70px 167px 0px 40px;
+    /* color: white; */
+    font-family: 'Butler';
+    font-weight: bold;
+    font-size: 30px;
+}
+.session-head .content{
+    padding: 10px 40px 0px 40px;
+    font-size: 15px;
+    color: white;
+    line-height: 25px;
+}
+
+
+.sheetal-intro{
+    background: url('/assets/images/vector-seep.png');
+    background-attachment: scroll;
+    height: 400px;
+    width: 400px;
+    background-size: cover;
+}
+.session-body{
+    position: relative;
+    right: 480px;
+    top: 30px;
+}
+.session-body li{
+    background-color: white;
+    margin: 30px -20px;
+    display: flex;
+    top: 20px;
+    border-radius: 50px;
+    justify-content: space-between;
+    padding: 10px;
+    width: 350px;
+}
+
+.session-body ul {
+    position: relative;
+    top: 70px;
+    right: -48px;
+}
+
+.brdr-ltlb-0{
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+.session-body li a{
+    text-decoration: none;
+    color: #123132;
+    padding: 10px 25px;
+    font-weight:600;
+    font-size: 17px;
+}
+
+.session-body img{
+    transition: transform .7s ease-in-out;
+}
+
+.session-body img:hover{
+    transform: rotate(360deg);
+}
+.session-body li a:hover{
+    color: #c07f7c;
+    font-weight: 600;
+}
