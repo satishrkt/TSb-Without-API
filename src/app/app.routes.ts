@@ -11,6 +11,8 @@ import { PortfolioComponent } from './main-component/portfolio/portfolio.compone
 import { CartComponent } from './main-component/cart/cart.component';
 import { CheckoutComponent } from './main-component/checkout/checkout.component';
 import { SingleEventComponent } from './main-component/single-event/single-event.component';
+import { TermsConditionsComponent } from './shared-component/terms-conditions/terms-conditions.component';
+import { PrivacyPolicyComponent } from './shared-component/privacy-policy/privacy-policy.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -27,6 +29,8 @@ export const routes: Routes = [
     { path: 'gallery', component: PortfolioComponent},
     { path: 'cart', component: CartComponent },
     { path: 'checkout', component: CheckoutComponent },
+    { path: 'terms&conditions', component: TermsConditionsComponent },
+    { path: 'privacy-policy', component: PrivacyPolicyComponent },
     { path: '**', component: PageNotFoundComponent }
 ];
 
