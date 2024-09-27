@@ -19,7 +19,7 @@
         <!-- Price column with 2-column span -->
         <ng-container matColumnDef="price">
           <th mat-header-cell *matHeaderCellDef colspan="2">Price</th>
-          <td mat-cell *matCellDef="let element" colspan="2">USD {{element.price}}</td>
+          <td mat-cell *matCellDef="let element" colspan="2">INR {{element.price}}</td>
         </ng-container>
     
         <!-- Quantity column with 2-column span -->
@@ -33,7 +33,7 @@
         <!-- Subtotal column with 2-column span -->
         <ng-container matColumnDef="subtotal">
           <th mat-header-cell *matHeaderCellDef colspan="2">Subtotal</th>
-          <td mat-cell *matCellDef="let element" colspan="2">USD {{element.price * element.TotalNumberOfPerson}}</td>
+          <td mat-cell *matCellDef="let element" colspan="2">INR {{element.price * element.TotalNumberOfPerson}}</td>
         </ng-container>
     
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
@@ -50,9 +50,9 @@
         }
       </div>
       <div class="total-section">
-        <p>Subtotal: USD {{ calculateSubtotal() }}</p>
-        <p>Discount: USD {{ discountAmount }}</p>
-        <p><strong>Total: USD {{ calculateTotal() }}</strong></p>
+        <p>Subtotal: INR {{ calculateSubtotal() }}</p>
+        <p>Discount: INR {{ discountAmount }}</p>
+        <p><strong>Total: INR {{ calculateTotal() }}</strong></p>
       </div>
     
       <a class="btn checkout-btn" routerLink="/checkout">Proceed to Checkout</a>
